@@ -75,7 +75,7 @@ g1 <- ggplot() +
                                                                         linetype = "dashed", size = 0.5),
           panel.background = element_rect(fill = 'lightblue'))+
     
-    geom_point(data = rod, aes(x = Long, y = Lat), colour = "#998A53",
+    geom_point(data = rod, aes(x = Long, y = Lat), colour = "#1A055D",
                alpha = 0.6, size = 2.2) +
     
     # Configurar a descrição dos eixos X e Y
@@ -93,20 +93,6 @@ dev.off()
 
 ################################################################################
 
-cores <- c('#F9F42F', '#FB6274', '#276560', '#FF6E0F', '#007500', '#870003', 
-           '#FF6D33', '#423224', '#191329', '#0F0900', '#01C901', '#6C226C', '#A78C44',
-           '#F9F42F', '#FB6274', '#276560', '#FF6E0F', '#007500', '#870003', 
-           '#FF6D33', '#423224', '#191329', '#0F0900', '#01C901', '#6C226C', '#A78C44',
-           '#F9F42F', '#FB6274', '#276560', '#FF6E0F', '#007500', '#870003', 
-           '#FF6D33', '#423224', '#191329', '#0F0900', '#01C901', '#6C226C', '#A78C44',
-           '#F9F42F', '#FB6274', '#276560', '#FF6E0F', '#007500', '#870003', 
-           '#FF6D33', '#423224', '#191329', '#0F0900', '#01C901', '#6C226C', '#A78C44',
-           '#F9F42F', '#FB6274', '#276560', '#FF6E0F', '#007500', '#870003', 
-           '#FF6D33', '#423224', '#191329', '#0F0900', '#01C901', '#6C226C', '#A78C44',
-           '#F9F42F', '#FB6274', '#276560', '#FF6E0F', '#007500', '#870003', 
-           '#FF6D33', '#423224', '#191329', '#0F0900', '#01C901', '#6C226C', '#A78C44',
-           '#F9F42F', '#FB6274', '#276560', '#FF6E0F', '#007500', '#870003', 
-           '#FF6D33', '#423224', '#191329', '#0F0900', '#01C901', '#6C226C', '#A78C44')
 
 names <- c(unique(rod$Spp))
 
@@ -137,7 +123,7 @@ for (num in 1:92) {
                                               linetype = "dashed", size = 0.5),
               panel.background = element_rect(fill = 'lightblue'))+
         
-        geom_point(data = sp, aes(x = Long, y = Lat), colour = cores[num],
+        geom_point(data = sp, aes(x = Long, y = Lat), colour = '#FF8300',
                    alpha = 0.6, size = 2.2) +
         
         # Configurar a descrição dos eixos X e Y
@@ -146,138 +132,9 @@ for (num in 1:92) {
         # labs(title=expression(paste("Plot de ", italic(nome_sp))))     # ñ funcionou
     
     
-    ggsave(g, file=paste0("./teste/", nome_sp,".png"), 
+    ggsave(g, file=paste0("./Mapas/", nome_sp,".png"), 
            width = 2400, height = 1600, units = "px")
 
 }
 
 ################################################################################
-
-# O SCRIPT A SEGUIR FOI CRIADO ANTERIORMENTE AO LOOP FOR DOS PLOTS,
-# NÃO APAGUEI ELE PARA LEMBRAR DOS CÓDIGOS
-
-'''
-
-# 2. Phymatolithon calcareum
-
-# Separar dados da especie
-calcareum <- rod %>%
-    filter(Spp=="Phymatolithon calcareum") %>%
-    select(Lat, Long) %>%
-    as.data.frame()
-
-
-# Titulo do plot
-titulo <- expression(paste("Plot de ", italic("Phymatolithon calcareum")))
-
-# Contrucao do mapa
-g2 <- ggplot() +
-    geom_polygon(data = map_data("world"), aes(long, lat, group = group), 
-                 color = "#323334", fill='gray') +
-    scale_x_continuous(breaks = (-9:9)*20) +
-    scale_y_continuous(breaks = (-9:9)*10) +
-    theme_bw() +
-    theme(panel.grid = element_blank(), panel.grid.major = element_line(color = gray(.5), 
-                                                                        linetype = "dashed", size = 0.5),
-          panel.background = element_rect(fill = 'lightblue'))+
-    
-    geom_point(data = calcareum, aes(x = Long, y = Lat), colour = "#1D7800",
-               alpha = 0.6, size = 2.2) +
-    
-    # Configurar a descrição dos eixos X e Y
-    labs(x = "Longitude", y = "Latitude") +
-    labs(title=titulo)
-
-g2
-
-# Exportar o mapa como uma imagem PNG
-png("./Mapas/Phymatolithon_calcareum.png", res = 300,
-    width = 2400, height = 1600, unit = "px")
-g2
-
-dev.off()
-
-################################################################################
-
-# Lithothamnion glaciale
-
-# Separar dados da especie
-glaciale <- rod %>%
-    filter(Spp=="Lithothamnion glaciale") %>%
-    select(Lat, Long) %>%
-    as.data.frame()
-
-
-# Titulo do plot
-titulo2 <- expression(paste("Plot de ", italic("Lithothamnion glaciale")))
-
-
-# Contrucao do mapa
-g3 <- ggplot() +
-    geom_polygon(data = map_data("world"), aes(long, lat, group = group), 
-                 color = "#323334", fill='gray') +
-    scale_x_continuous(breaks = (-9:9)*20) +
-    scale_y_continuous(breaks = (-9:9)*10) +
-    theme_bw() +
-    theme(panel.grid = element_blank(), panel.grid.major = element_line(color = gray(.5), 
-                                                                        linetype = "dashed", size = 0.5),
-          panel.background = element_rect(fill = 'lightblue'))+
-    
-    geom_point(data = glaciale, aes(x = Long, y = Lat), colour = "#34008D",
-               alpha = 0.6, size = 2.2) +
-    
-    # Configurar a descrição dos eixos X e Y
-    labs(x = "Longitude", y = "Latitude") +
-    labs(title=titulo2)
-g3
-
-# Exportar o mapa como uma imagem PNG
-png("./Mapas/Lithothamnion_glaciale.png", res = 300,
-    width = 2400, height = 1600, unit = "px")
-g3
-
-dev.off()
-
-################################################################################
-
-# Lithophyllum incrustans
-
-# Separar dados da especie
-incrustans <- rod %>%
-    filter(Spp=="Lithophyllum incrustans") %>%
-    select(Lat, Long) %>%
-    as.data.frame()
-
-
-# Titulo do plot
-titulo3 <- expression(paste("Plot de ", italic("Lithophyllum incrustans")))
-
-# Contrucao do mapa
-g4 <- ggplot() +
-    geom_polygon(data = map_data("world"), aes(long, lat, group = group), 
-                 color = "#323334", fill='gray') +
-    scale_x_continuous(breaks = (-9:9)*20) +
-    scale_y_continuous(breaks = (-9:9)*10) +
-    theme_bw() +
-    theme(panel.grid = element_blank(), panel.grid.major = element_line(color = gray(.5), 
-                                                                        linetype = "dashed", size = 0.5),
-          panel.background = element_rect(fill = 'lightblue'))+
-    
-    geom_point(data = incrustans, aes(x = Long, y = Lat), colour = "#CF8800",
-               alpha = 0.6, size = 2.2) +
-    
-    # Configurar a descrição dos eixos X e Y
-    labs(x = "Longitude", y = "Latitude") +
-    labs(title=titulo3)
-
-
-g4
-
-# Exportar o mapa como uma imagem PNG
-png("./Mapas/Lithophyllum_incrustans.png", res = 300,
-    width = 2400, height = 1600, unit = "px")
-g4
-
-dev.off()
-
-'''
