@@ -22,6 +22,7 @@ if (!require(leaflet)) install.packages('leaflet')
 if (!require(RStoolbox)) install.packages('RStoolbox')
 if (!require(usdm)) install.packages('usdm')
 if (!require(sp)) install.packages('sp')
+if (!require(corrplot)) install.packages('corrplot')
 
 
 ##########################################################################################
@@ -48,8 +49,9 @@ length(rod$Lat)
 calc <- rod %>%
     filter(rod$Spp == "Phymatolithon calcareum") %>%
     dplyr::select(Lat, Long) %>%
-    drop_na()
+    tidyr::drop_na()
 
+head(calc)
 
 ##########################################################################################
 
@@ -65,6 +67,9 @@ cams_pres <- list.files(path='./Camadas/Presente/',
 
 cams_pres <- raster::stack(cams_pres)
 
+# Aplicar projecao
+projection(cams_pres) <- "+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"
+
 # Verificar
 plot(cams_pres[[1]])  # velocidade da corrente na superfície
 
@@ -75,38 +80,44 @@ cams_26 <- list.files(path='./Camadas/2040-2050/RCP26_superficie/',
 
 cams_26 <- raster::stack(cams_26)
 
+# Aplicar projecao
+projection(cams_26) <- "+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"
+
 # verificar 
 plot(cams_26[[1]])  # velocidade da corrente na superfície
 
 
 ##########################################################################################
 
-#------- Teste VIF com as variáveis ambientais -------#
+#------- Teste VIF com as variáveis ambientais do presente -------#
 
-# Permite que dados espaciais sejam associados com o sistema de coordenadas,
-# criando uma projeção que pode ser utilizada nos rasters
-proj_WGS <- sp::CRS(
-    "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0")
+# Converter os pontos para SpatialPoints com referenciamento georgrafico
+calc <- calc[,c(1,2)]
+calc <- SpatialPointsDataFrame(coords = calc, data = calc,
+                               proj4string = CRS("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"))
 
-# Converção dos pontos geográficos para SpatialPoints
-sp::coordinates(calc) <- Long~Lat
-
-# Adicionar a projeção
-raster::crs(calc) <- proj_WGS
-
-# Verificação dos dados
-pontos_planta
-
-vif(cams_pres)
+# Verificacao dos dados
+calc
 
 
-ex <- raster::extract(cams_pres, calc)
-head(ex)
+# Extrair os valores das camadas nos pontos geograficos
+ex <- raster::extract(cams_pres, calc, na.rm=TRUE)# existem pontos que podem estar fora
+head(ex)                                    # dos rasters, pois foram extraídos valores NA
+                                                    
+head(na.omit(ex))  # Omitir valores NA exraidos
 
+# omitir NAs
+ex <- na.omit(ex)
 
+# Teste VIF
 vif <- usdm::vifstep(ex)
 cor(ex)
 
+# Matriz de correlacao
+vif@corMatrix
+
+### Grafico da matriz de correlacao entre as variaveis 
+corr <- corrplot::corrplot(cor(ex), tl.cex=0.8)
 
 ##########################################################################################
 
