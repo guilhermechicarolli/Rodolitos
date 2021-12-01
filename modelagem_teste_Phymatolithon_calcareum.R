@@ -21,9 +21,10 @@ if (!require(sdmpredictors)) install.packages('sdmpredictors')
 if (!require(leaflet)) install.packages('leaflet')
 if (!require(RStoolbox)) install.packages('RStoolbox')
 if (!require(usdm)) install.packages('usdm')
+if (!require(usdm)) install.packages('sdm')
 if (!require(sp)) install.packages('sp')
 if (!require(corrplot)) install.packages('corrplot')
-
+if (!require(dismo)) install.packages('dismo')
 
 ##########################################################################################
 
@@ -48,7 +49,7 @@ length(rod$Lat)
 # Carregar dados de ocorrencia de Phymatolithon calcareum
 calc <- rod %>%
     filter(rod$Spp == "Phymatolithon calcareum") %>%
-    dplyr::select(Lat, Long) %>%
+    dplyr::select(Long, Lat) %>%
     tidyr::drop_na()
 
 head(calc)
@@ -62,7 +63,7 @@ list_layers()
 # Carregar as camadas ambientais
 
 ### Camadas presente (superficie)
-cams_pres <- list.files(path='./Camadas/Presente/', 
+cams_pres <- list.files(path='./Camadas/Presente/superficie/', 
                         pattern='.asc', full.names=TRUE) 
 
 cams_pres <- raster::stack(cams_pres)
@@ -71,11 +72,26 @@ cams_pres <- raster::stack(cams_pres)
 projection(cams_pres) <- "+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"
 
 # Verificar
-plot(cams_pres[[1]])  # velocidade da corrente na superfície
+plot(cams_pres[[1]])  # velocidade min da corrente na superfície
+
+
+
+### Camadas presente (bentonica min)
+cams_ben_min <- list.files(path='./Camadas/Presente/bentonica_profund_minima', 
+                        pattern='.asc', full.names=TRUE) 
+
+cams_ben_min <- raster::stack(cams_ben_min)
+
+# Aplicar projecao
+projection(cams_ben_min) <- "+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"
+
+# Verificar
+plot(cams_ben_min[[1]])  # velocidade min da corrente na profundidade min
+
 
 
 ### Camadas RCP 2.6 (superficie)
-cams_26 <- list.files(path='./Camadas/2040-2050/RCP26_superficie/', 
+cams_26 <- list.files(path='./Camadas/2040-2050/RCP26/superficie', 
                       pattern='.asc', full.names=TRUE) 
 
 cams_26 <- raster::stack(cams_26)
@@ -84,30 +100,51 @@ cams_26 <- raster::stack(cams_26)
 projection(cams_26) <- "+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"
 
 # verificar 
-plot(cams_26[[1]])  # velocidade da corrente na superfície
+plot(cams_26[[1]])  # velocidade min da corrente na superfície
+
+
+
+### Camadas RCP 2.6 (bentonica min)
+cams_ben_min_26 <- list.files(path='./Camadas/2040-2050/RCP26/bentonica_profund_minima/', 
+                           pattern='.asc', full.names=TRUE) 
+
+cams_ben_min_26 <- raster::stack(cams_ben_min_26)
+
+# Aplicar projecao
+projection(cams_ben_min_26) <- "+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"
+
+# Verificar
+plot(cams_ben_min_26[[1]])  # velocidade min da corrente na profundidade min
 
 
 ##########################################################################################
 
 #------- Teste VIF com as variáveis ambientais do presente -------#
 
-# Converter os pontos para SpatialPoints com referenciamento georgrafico
-calc <- calc[,c(1,2)]
-calc <- SpatialPointsDataFrame(coords = calc, data = calc,
-                               proj4string = CRS("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"))
+# Remover pontos de localidade com valores NA dos rasters
+e <- extract(cams_ben_min, calc)
+
+# dataframe com os valores extraídos de cada célula
+x <- data.frame(calc, e)
+
+head(x)
+
+# Remover células com valores NA nos rasters
+calc_ajust <- na.omit(x)
+
+# Verificar
+calc_ajust
+
+calc_ajust$especie <- 1
+calc_ajust <- calc_ajust[, c('Long', 'Lat')]
+
+coordinates(calc_ajust) <- c('Long', 'Lat')
 
 # Verificacao dos dados
-calc
+calc_ajust
 
-
-# Extrair os valores das camadas nos pontos geograficos
-ex <- raster::extract(cams_pres, calc, na.rm=TRUE)# existem pontos que podem estar fora
-head(ex)                                    # dos rasters, pois foram extraídos valores NA
-                                                    
-head(na.omit(ex))  # Omitir valores NA exraidos
-
-# omitir NAs
-ex <- na.omit(ex)
+# omitir NAs obtidos do extract
+ex <- na.omit(e)
 
 # Teste VIF
 vif <- usdm::vifstep(ex)
@@ -121,16 +158,15 @@ corr <- corrplot::corrplot(cor(ex), tl.cex=0.8)
 
 ##########################################################################################
 
-
 #--------- 2. RODAGEM DO MODELO PREVIO E SELECAO DAS VARIAVEIS   ---------#
+
 
 # MODELO CHEIO
 
-calc$species <- 1
-
 # Adicionar os dados previo para fazer um modelo com todas as variaveis
-dados_mod_cheio <- sdm::sdmData(species~., spg, predictors = bioCams, 
+dados_mod_cheio <- sdm::sdmData(species~., train=calc, predictors = cams_ben_min, 
                    bg=list(method='gRandom', n=10000))
+
 dados_mod_cheio
 
 
@@ -142,15 +178,11 @@ modeloC <- sdm::sdm(species~., dados_mod_cheio, methods = c('maxent','rf','glm',
                                                             'gam','bioclim','domain.dismo'), replication=c('sub', 'boot'),
                test.p=30, n=25, parallelSettings=list(ncore=5, method='parallel'))
 
-# NOTAS: 1) Para o MaxEnt funcionar o Java do computador deve estar atualizado. 
-# 2) O parametro ncore e a quantidade de cores de processamento utilizados para
-# a modelagem, altere conforme a capacidade do computador
-
 modeloC
 
 # Plot da importancia das variaveis
 plot(getVarImp(modeloC), 'AUC', main="Importância relativa das biovariáveis", 
-     ylab='Variáveis', xlab="Importância relativa da variável") # Biovars: 6, 17, 19, 14
+     ylab='Variáveis', xlab="Importância relativa da variável") 
 getVarImp(modeloC)
 
 # Para abrir uma interface de exploracao do modelo
@@ -158,6 +190,4 @@ sdm::gui(modeloC)
 
 
 
-
-
-
+##########################################################################################
