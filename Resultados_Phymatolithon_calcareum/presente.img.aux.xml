@@ -1,0 +1,722 @@
+<PAMDataset>
+  <PAMRasterBand band="1">
+    <Description>Layer_1</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="2">
+    <Description>Layer_2</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="3">
+    <Description>Layer_3</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="4">
+    <Description>Layer_4</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="5">
+    <Description>Layer_5</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="6">
+    <Description>Layer_6</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="7">
+    <Description>Layer_7</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="8">
+    <Description>Layer_8</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="9">
+    <Description>Layer_9</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="10">
+    <Description>Layer_10</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="11">
+    <Description>Layer_11</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="12">
+    <Description>Layer_12</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="13">
+    <Description>Layer_13</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="14">
+    <Description>Layer_14</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="15">
+    <Description>Layer_15</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="16">
+    <Description>Layer_16</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="17">
+    <Description>Layer_17</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="18">
+    <Description>Layer_18</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="19">
+    <Description>Layer_19</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="20">
+    <Description>Layer_20</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="21">
+    <Description>Layer_21</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="22">
+    <Description>Layer_22</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="23">
+    <Description>Layer_23</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="24">
+    <Description>Layer_24</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="25">
+    <Description>Layer_25</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="26">
+    <Description>Layer_26</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="27">
+    <Description>Layer_27</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="28">
+    <Description>Layer_28</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="29">
+    <Description>Layer_29</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="30">
+    <Description>Layer_30</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="31">
+    <Description>Layer_31</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="32">
+    <Description>Layer_32</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="33">
+    <Description>Layer_33</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="34">
+    <Description>Layer_34</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="35">
+    <Description>Layer_35</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="36">
+    <Description>Layer_36</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="37">
+    <Description>Layer_37</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="38">
+    <Description>Layer_38</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="39">
+    <Description>Layer_39</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="40">
+    <Description>Layer_40</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="41">
+    <Description>Layer_41</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="42">
+    <Description>Layer_42</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="43">
+    <Description>Layer_43</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="44">
+    <Description>Layer_44</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="45">
+    <Description>Layer_45</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="46">
+    <Description>Layer_46</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="47">
+    <Description>Layer_47</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="48">
+    <Description>Layer_48</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="49">
+    <Description>Layer_49</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="50">
+    <Description>Layer_50</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="51">
+    <Description>Layer_51</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="52">
+    <Description>Layer_52</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="53">
+    <Description>Layer_53</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="54">
+    <Description>Layer_54</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="55">
+    <Description>Layer_55</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="56">
+    <Description>Layer_56</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="57">
+    <Description>Layer_57</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="58">
+    <Description>Layer_58</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="59">
+    <Description>Layer_59</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="60">
+    <Description>Layer_60</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="61">
+    <Description>Layer_61</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="62">
+    <Description>Layer_62</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="63">
+    <Description>Layer_63</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="64">
+    <Description>Layer_64</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="65">
+    <Description>Layer_65</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="66">
+    <Description>Layer_66</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="67">
+    <Description>Layer_67</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="68">
+    <Description>Layer_68</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="69">
+    <Description>Layer_69</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="70">
+    <Description>Layer_70</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="71">
+    <Description>Layer_71</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="72">
+    <Description>Layer_72</Description>
+    <Metadata>
+      <MDI key="LAYER_TYPE">athematic</MDI>
+      <MDI key="STATISTICS_MAXIMUM">-1.#INF</MDI>
+      <MDI key="STATISTICS_MEAN">1.#SNAN</MDI>
+      <MDI key="STATISTICS_MINIMUM">1.#INF</MDI>
+      <MDI key="STATISTICS_STDDEV">1.#SNAN</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>

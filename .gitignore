@@ -36,3 +36,13 @@ vignettes/*.pdf
 .Renviron
 
 *.asc
+
+*.RDataTmp
+*.RDataTmp1
+
+rod.RData
+
+*.img
+*.ige
+
+Camadas
